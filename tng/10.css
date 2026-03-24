@@ -1,0 +1,39 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+div {
+  border: 1px solid black;
+}
+.container {
+  
+  width:600px;
+  height:600px;
+  margin: auto;
+  position:relative;
+}
+.position {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+.position {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+}
+.position-top-50 {
+  top:50px;
+  
+}
+.position-top-200 {
+  top:200px;
+}
+.position-left-50 {
+  left: 50px;
+}
+.position-left-200 {
+  left:200px;
+}
+
