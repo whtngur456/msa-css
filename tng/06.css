@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+  line-height: 2rem;
+}
+.sub-title {
+  font-weight: 900;
+  color: #ad3000;
+  font-size: 1.5em;
+}

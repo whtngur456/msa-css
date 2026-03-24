@@ -1,0 +1,14 @@
+ul {
+  /* 번호(불릿) 스타일을 지정하는 속성 */
+  list-style-type: none;
+
+  /* 리스트의 들여쓰기 여부를 지정하는 속성 */
+  /* list-style-position: outside; */
+
+  /* 불릿을 이미지로 설정하는 속성 */
+  /* list-style-image: url("./cat2.jpg"); */
+}
+
+.test {
+  list-style-image: url("./cat2.jpg");
+}

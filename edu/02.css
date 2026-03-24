@@ -1,0 +1,24 @@
+/* 전체 선택자: 모든 요소 선택 */
+* {
+  color: skyblue;
+}
+
+/* 타입 선택자: 특정 태그명을 가진 모든 요소를 선택 */
+h1 {
+  color: red;
+}
+
+/* 클래스 선택자: 주어진 class명을 가진 모든 요소를 선택 */
+.font-color {
+  color: orange;
+}
+
+/* ID 선택자: HTML Tag의 id로 선택 */
+#p1 {
+  color: black;
+}
+
+/* 그룹 선택자: `,(콤마)`를 구분자로하여 복수의 선택자 요소를 선택 */
+em, strong, #p1 {
+  color: blueviolet;
+}
