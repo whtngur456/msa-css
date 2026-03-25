@@ -1,0 +1,48 @@
+/* 
+ 가상 선택자
+ HTML 요소의 상태에 따라 선택해서 스타일을 지정하는 선택
+ 선택자: 가상클래스명
+ */
+ /* 한번도 방문하지 않은 링크 요소 선택 */
+a:link {
+   color: cornflowerblue;
+}
+/* 한번이라도 방문한 링크 요소 선택 */
+a:visited {
+   color: purple;
+}
+/* 마우스커서가 올라가 있는 요소를 선택 */
+a:hover {
+  background-color: blueviolet;
+}
+/* 포커스가 적용되어 있는 요소를 선택 */
+a:focus,input:focus {
+  outline: none;
+  border: 3px solid #ff0000;
+}
+input:checked + label {
+  background-color: aqua;
+}
+ /* 해당 선택자의 요소를 제외한 나머지 요소에 스타일 적용  */
+ a:not([target]) {
+  color:chartreuse;
+ }
+
+ /* :nth-child :자식요소 선택에 사용하는 가상 선택 */
+ .container :nth-child(n + 2):nth-child(-n + 4) {
+  color:rgb(218, 0, 0);
+ }
+
+ .container :nth-child(odd) {
+  background-color: rgb(79, 160, 163);
+ }
+ 
+ .container :nth-child(even) {
+  background-color: rgb(126, 115, 187);
+ }
+
+ /* nth-of-type(): 부모 요소 내에서 특정 유형의 n번재 자식을 선택 */
+ .container span:nth-of-type(1)
+ ,.container span:nth-of-type(3) {
+  color:chartreuse;
+ }
