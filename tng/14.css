@@ -1,0 +1,71 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+fieldset {
+  padding:0 10px 10px;
+  width:700px;
+  height:700px;
+  background-image: url("./SSI_20230614085709_N1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;  
+
+}
+legend {
+  font-size: 30px;
+  color:purple;
+  weight:900px;  
+}
+.required-star::before {
+  content: "*";
+  color:red
+}
+input:focus,input:focus {
+  outline:none;
+  border: 3px solid red;
+}
+label:focus,input:focus {
+  color:red;
+}
+input {
+  background:transparent;
+  
+}
+textarea {
+  width: 400px;
+  height:250px;
+  background:transparent;
+}
+textarea:focus,input:focus {
+  outline-color: red;
+  border:3px solid red
+}
+
+.btn-box {
+  position:relative;
+}
+.btn-send:hover + .test {
+  display: inline;
+}
+
+.test {
+  background-color: black;
+  display: none;
+  color:white;
+  font-size: 30px;
+  position:absolute;
+  left:50px; 
+}
+
+input[type="radio"]:checked + label {
+  color: red;
+}
+.label-request {
+  vertical-align: top;
+}
+
+
+
+

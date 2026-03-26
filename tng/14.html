@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./14.css">
+</head>
+<body>
+  <fieldset>
+    <legend>I WANT YOU</legend>
+    <form action="">
+      <label for="id" class="required-star">이름</label>
+      <input type="text" name="name" id="name" required>
+      <br>
+      <br>
+      <label for="age" class="required-star">나이</label>
+      <input type="number" id="age" name="age" min="20" required>
+      <br>
+      
+      <label for="gender" class="required-star">성별</label>
+      <input type="radio" id="male" name="gender">
+      <label for="male">남자</label>
+      <input type="radio" id="female" name="gender">
+      <label for="fm">여자</label>
+
+      <br>
+      <label for="txta" class="label-request">요청사항 : </label>
+      <textarea name="txta" id="txta" placeholder="요청 사항 입력" cols="60" rows="30"></textarea>
+      <br>
+      <div class="btn-box">
+        <button type="submit" class="btn-send">보내기</button>
+        <span class="test">내용을 다시한번 확인해주세요</span>
+      </div>
+    </form>
+    
+  </fieldset>
+</body>
+</html>
