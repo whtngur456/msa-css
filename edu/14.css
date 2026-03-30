@@ -3,6 +3,7 @@
 */
 
 /* ::after특정 요소의 컨텐츠 뒤에 다른 요소를 삽입 */
+/* ::before특정 요소의 컨텐츠 앞에 다른 요소를 삽입 */
 .required-star::before {
   content: "✓";
   color:red
