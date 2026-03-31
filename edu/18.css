@@ -1,0 +1,52 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  padding:10px;
+}
+.container {
+  display: grid;
+
+  /* gird-template-columns:그리드의 컬럼 갯수와 너비를 지정하는 속성 */
+  /* 'fr'단위는 그리드 아이템이 남은 영역을 비율로써 나누어 적용 */
+  /* grid-template-columns: 50px 1fr 1fr 10px; */
+
+  /* grid-template-rows:그리드의 로우 갯수와 너비를 지정하는 속성 ; */
+  /* grid-template-rows: 1fr 1fr 2fr 1fr; */
+
+  /* repeat(반복할 횟수,크기 단위):값이 반복될때 사용하는 함수 */
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* minmax(최소값, 최대값):최소값과 최대값을 지정하는 함수 */
+  /* grid-template-columns: repeat(3,minmax(200px, 1fr)); */
+
+  /* auto-fit:자동으로 컬럼수를 조절, 현재 그리드 아이템의 갯수와 그리드 셀의 갯수가 일치한채로 너비를 조정*/
+  /* auto-fill:자동으로 컬럼수를 조절,min으로 설정한 공간이 들어갈 수 있다면 그리드 셀을 계속 증가 시킨다 */
+  /* grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); */
+
+  gap:10px;
+
+
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  }
+  
+  .item {
+    background-color: skyblue;
+  border:1px solid black;
+}
+
+.item:nth-child(1) {
+  /* grid-row, grid-column:로우 또는 컬럼의 시작번호와 끝번호를 한번에 지정하는 속성 */
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  text-align: center;
+}
+
+.item:nth-child(7) {
+  /* span: 끝번호에 span 키워드를 부여해서,현재위치에서 몇개의 셀을 선택할지 결정 */
+  grid-column: 3 / span 1;
+  grid-row: 4/ span 2;
+}

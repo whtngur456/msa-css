@@ -1,0 +1,36 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  padding:10px;
+}
+
+.container {
+  margin: auto;
+  background-color: gray;
+  width: 600px;
+  height: 700px;
+  padding:10px;
+  gap:10px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, 1fr); 
+  
+}
+
+.item {
+  background-color: aqua;
+  border:1px solid black;
+}
+
+.item:nth-child(3){
+  grid-column: span 2;
+}
+
+.c2{
+  display: grid;
+  gap: 10px;
+}
+

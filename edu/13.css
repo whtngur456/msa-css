@@ -18,9 +18,9 @@ a:hover {
 /* 포커스가 적용되어 있는 요소를 선택 */
 a:focus,input:focus {
   outline: none;
-  border: 3px solid #ff0000;
+  border: 1px solid #ff0000;
 }
-input:checked + label {
+input:checked + label {       
   background-color: aqua;
 }
  /* 해당 선택자의 요소를 제외한 나머지 요소에 스타일 적용  */
